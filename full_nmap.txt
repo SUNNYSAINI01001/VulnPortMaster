@@ -1,0 +1,132 @@
+# Nmap 7.95 scan initiated Sat Apr 26 05:47:45 2025 as: /usr/lib/nmap/nmap --privileged -sV -vvv -p21,22,139,445 -A --script vuln --max-retries 1 --max-scan-delay 20 -T4 -Pn --stats-every 3m -oN full_nmap.txt 10.10.124.142
+Nmap scan report for 10.10.124.142
+Host is up, received user-set (0.17s latency).
+Scanned at 2025-04-26 05:47:55 IST for 52s
+
+PORT    STATE SERVICE     REASON         VERSION
+21/tcp  open  ftp         syn-ack ttl 60 vsftpd 2.0.8 or later
+| vulners: 
+|   vsftpd 2.0.8 or later: 
+|     	PACKETSTORM:162145	10.0	https://vulners.com/packetstorm/PACKETSTORM:162145	*EXPLOIT*
+|     	EDB-ID:49757	9.8	https://vulners.com/exploitdb/EDB-ID:49757	*EXPLOIT*
+|     	CVE-2011-2523	9.8	https://vulners.com/cve/CVE-2011-2523
+|     	1337DAY-ID-36095	9.8	https://vulners.com/zdt/1337DAY-ID-36095	*EXPLOIT*
+|     	SSV:78173	7.8	https://vulners.com/seebug/SSV:78173	*EXPLOIT*
+|     	SSV:69983	7.8	https://vulners.com/seebug/SSV:69983	*EXPLOIT*
+|     	PACKETSTORM:98796	7.8	https://vulners.com/packetstorm/PACKETSTORM:98796	*EXPLOIT*
+|     	PACKETSTORM:94556	7.8	https://vulners.com/packetstorm/PACKETSTORM:94556	*EXPLOIT*
+|     	PACKETSTORM:101052	7.8	https://vulners.com/packetstorm/PACKETSTORM:101052	*EXPLOIT*
+|     	EXPLOITPACK:71D51B69AA2D3A74753D7A921EE79985	7.8	https://vulners.com/exploitpack/EXPLOITPACK:71D51B69AA2D3A74753D7A921EE79985	*EXPLOIT*
+|     	EXPLOITPACK:67F6569F63A082199721C069C852BBD7	7.8	https://vulners.com/exploitpack/EXPLOITPACK:67F6569F63A082199721C069C852BBD7	*EXPLOIT*
+|     	EDB-ID:24450	7.8	https://vulners.com/exploitdb/EDB-ID:24450	*EXPLOIT*
+|     	EDB-ID:15215	7.8	https://vulners.com/exploitdb/EDB-ID:15215	*EXPLOIT*
+|     	SSV:70793	4.0	https://vulners.com/seebug/SSV:70793	*EXPLOIT*
+|     	SSV:20359	4.0	https://vulners.com/seebug/SSV:20359	*EXPLOIT*
+|     	PACKETSTORM:180501	4.0	https://vulners.com/packetstorm/PACKETSTORM:180501	*EXPLOIT*
+|     	MSF:AUXILIARY-DOS-FTP-VSFTPD_232-	4.0	https://vulners.com/metasploit/MSF:AUXILIARY-DOS-FTP-VSFTPD_232-	*EXPLOIT*
+|     	EXPLOITPACK:0904206FB9ADF417B8BB345E7B5DE807	4.0	https://vulners.com/exploitpack/EXPLOITPACK:0904206FB9ADF417B8BB345E7B5DE807	*EXPLOIT*
+|     	EDB-ID:16270	4.0	https://vulners.com/exploitdb/EDB-ID:16270	*EXPLOIT*
+|     	CVE-2011-0762	4.0	https://vulners.com/cve/CVE-2011-0762
+|     	1337DAY-ID-20301	0.0	https://vulners.com/zdt/1337DAY-ID-20301	*EXPLOIT*
+|     	1337DAY-ID-15534	0.0	https://vulners.com/zdt/1337DAY-ID-15534	*EXPLOIT*
+|_    	1337DAY-ID-14373	0.0	https://vulners.com/zdt/1337DAY-ID-14373	*EXPLOIT*
+22/tcp  open  ssh         syn-ack ttl 60 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:7.6p1: 
+|     	2C119FFA-ECE0-5E14-A4A4-354A2C38071A	10.0	https://vulners.com/githubexploit/2C119FFA-ECE0-5E14-A4A4-354A2C38071A	*EXPLOIT*
+|     	CVE-2023-38408	9.8	https://vulners.com/cve/CVE-2023-38408
+|     	B8190CDB-3EB9-5631-9828-8064A1575B23	9.8	https://vulners.com/githubexploit/B8190CDB-3EB9-5631-9828-8064A1575B23	*EXPLOIT*
+|     	8FC9C5AB-3968-5F3C-825E-E8DB5379A623	9.8	https://vulners.com/githubexploit/8FC9C5AB-3968-5F3C-825E-E8DB5379A623	*EXPLOIT*
+|     	8AD01159-548E-546E-AA87-2DE89F3927EC	9.8	https://vulners.com/githubexploit/8AD01159-548E-546E-AA87-2DE89F3927EC	*EXPLOIT*
+|     	5E6968B4-DBD6-57FA-BF6E-D9B2219DB27A	9.8	https://vulners.com/githubexploit/5E6968B4-DBD6-57FA-BF6E-D9B2219DB27A	*EXPLOIT*
+|     	2227729D-6700-5C8F-8930-1EEAFD4B9FF0	9.8	https://vulners.com/githubexploit/2227729D-6700-5C8F-8930-1EEAFD4B9FF0	*EXPLOIT*
+|     	0221525F-07F5-5790-912D-F4B9E2D1B587	9.8	https://vulners.com/githubexploit/0221525F-07F5-5790-912D-F4B9E2D1B587	*EXPLOIT*
+|     	CVE-2020-15778	7.8	https://vulners.com/cve/CVE-2020-15778
+|     	SSV:92579	7.5	https://vulners.com/seebug/SSV:92579	*EXPLOIT*
+|     	PACKETSTORM:173661	7.5	https://vulners.com/packetstorm/PACKETSTORM:173661	*EXPLOIT*
+|     	F0979183-AE88-53B4-86CF-3AF0523F3807	7.5	https://vulners.com/githubexploit/F0979183-AE88-53B4-86CF-3AF0523F3807	*EXPLOIT*
+|     	1337DAY-ID-26576	7.5	https://vulners.com/zdt/1337DAY-ID-26576	*EXPLOIT*
+|     	CVE-2021-41617	7.0	https://vulners.com/cve/CVE-2021-41617
+|     	95499236-C9FE-56A6-9D7D-E943A24B633A	6.9	https://vulners.com/githubexploit/95499236-C9FE-56A6-9D7D-E943A24B633A	*EXPLOIT*
+|     	PACKETSTORM:189283	6.8	https://vulners.com/packetstorm/PACKETSTORM:189283	*EXPLOIT*
+|     	F79E574D-30C8-5C52-A801-66FFA0610BAA	6.8	https://vulners.com/githubexploit/F79E574D-30C8-5C52-A801-66FFA0610BAA	*EXPLOIT*
+|     	EDB-ID:46516	6.8	https://vulners.com/exploitdb/EDB-ID:46516	*EXPLOIT*
+|     	EDB-ID:46193	6.8	https://vulners.com/exploitdb/EDB-ID:46193	*EXPLOIT*
+|     	CVE-2025-26465	6.8	https://vulners.com/cve/CVE-2025-26465
+|     	CVE-2019-6110	6.8	https://vulners.com/cve/CVE-2019-6110
+|     	CVE-2019-6109	6.8	https://vulners.com/cve/CVE-2019-6109
+|     	C94132FD-1FA5-5342-B6EE-0DAF45EEFFE3	6.8	https://vulners.com/githubexploit/C94132FD-1FA5-5342-B6EE-0DAF45EEFFE3	*EXPLOIT*
+|     	1337DAY-ID-39918	6.8	https://vulners.com/zdt/1337DAY-ID-39918	*EXPLOIT*
+|     	10213DBE-F683-58BB-B6D3-353173626207	6.8	https://vulners.com/githubexploit/10213DBE-F683-58BB-B6D3-353173626207	*EXPLOIT*
+|     	CVE-2023-51385	6.5	https://vulners.com/cve/CVE-2023-51385
+|     	PACKETSTORM:181223	5.9	https://vulners.com/packetstorm/PACKETSTORM:181223	*EXPLOIT*
+|     	MSF:AUXILIARY-SCANNER-SSH-SSH_ENUMUSERS-	5.9	https://vulners.com/metasploit/MSF:AUXILIARY-SCANNER-SSH-SSH_ENUMUSERS-	*EXPLOIT*
+|     	CVE-2023-48795	5.9	https://vulners.com/cve/CVE-2023-48795
+|     	CVE-2020-14145	5.9	https://vulners.com/cve/CVE-2020-14145
+|     	CVE-2019-6111	5.9	https://vulners.com/cve/CVE-2019-6111
+|     	54E1BB01-2C69-5AFD-A23D-9783C9D9FC4C	5.9	https://vulners.com/githubexploit/54E1BB01-2C69-5AFD-A23D-9783C9D9FC4C	*EXPLOIT*
+|     	EXPLOITPACK:98FE96309F9524B8C84C508837551A19	5.8	https://vulners.com/exploitpack/EXPLOITPACK:98FE96309F9524B8C84C508837551A19	*EXPLOIT*
+|     	EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97	5.8	https://vulners.com/exploitpack/EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97	*EXPLOIT*
+|     	1337DAY-ID-32328	5.8	https://vulners.com/zdt/1337DAY-ID-32328	*EXPLOIT*
+|     	1337DAY-ID-32009	5.8	https://vulners.com/zdt/1337DAY-ID-32009	*EXPLOIT*
+|     	EDB-ID:45939	5.3	https://vulners.com/exploitdb/EDB-ID:45939	*EXPLOIT*
+|     	EDB-ID:45233	5.3	https://vulners.com/exploitdb/EDB-ID:45233	*EXPLOIT*
+|     	CVE-2018-20685	5.3	https://vulners.com/cve/CVE-2018-20685
+|     	CVE-2018-15919	5.3	https://vulners.com/cve/CVE-2018-15919
+|     	CVE-2018-15473	5.3	https://vulners.com/cve/CVE-2018-15473
+|     	CVE-2016-20012	5.3	https://vulners.com/cve/CVE-2016-20012
+|     	SSH_ENUM	5.0	https://vulners.com/canvas/SSH_ENUM	*EXPLOIT*
+|     	PACKETSTORM:150621	5.0	https://vulners.com/packetstorm/PACKETSTORM:150621	*EXPLOIT*
+|     	EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0	5.0	https://vulners.com/exploitpack/EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0	*EXPLOIT*
+|     	EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283	5.0	https://vulners.com/exploitpack/EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283	*EXPLOIT*
+|     	1337DAY-ID-31730	5.0	https://vulners.com/zdt/1337DAY-ID-31730	*EXPLOIT*
+|     	CVE-2021-36368	3.7	https://vulners.com/cve/CVE-2021-36368
+|     	PACKETSTORM:151227	0.0	https://vulners.com/packetstorm/PACKETSTORM:151227	*EXPLOIT*
+|     	PACKETSTORM:140261	0.0	https://vulners.com/packetstorm/PACKETSTORM:140261	*EXPLOIT*
+|_    	1337DAY-ID-30937	0.0	https://vulners.com/zdt/1337DAY-ID-30937	*EXPLOIT*
+139/tcp open  netbios-ssn syn-ack ttl 60 Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp open  netbios-ssn syn-ack ttl 60 Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 4.X
+OS CPE: cpe:/o:linux:linux_kernel:4.15
+OS details: Linux 4.15
+TCP/IP fingerprint:
+OS:SCAN(V=7.95%E=4%D=4/26%OT=21%CT=%CU=39007%PV=Y%DS=5%DC=T%G=N%TM=680C2667
+OS:%P=x86_64-pc-linux-gnu)SEQ(SP=104%GCD=1%ISR=10B%TI=Z%CI=Z%II=I%TS=A)OPS(
+OS:O1=M508ST11NW7%O2=M508ST11NW7%O3=M508NNT11NW7%O4=M508ST11NW7%O5=M508ST11
+OS:NW7%O6=M508ST11)WIN(W1=F4B3%W2=F4B3%W3=F4B3%W4=F4B3%W5=F4B3%W6=F4B3)ECN(
+OS:R=Y%DF=Y%T=40%W=F507%O=M508NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS
+OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=
+OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=
+OS:R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T
+OS:=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=
+OS:S)
+
+Uptime guess: 41.841 days (since Sat Mar 15 09:38:25 2025)
+Network Distance: 5 hops
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Host: ANONYMOUS; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_smb-vuln-ms10-061: false
+| smb-vuln-regsvc-dos: 
+|   VULNERABLE:
+|   Service regsvc in Microsoft Windows systems vulnerable to denial of service
+|     State: VULNERABLE
+|       The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference
+|       pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes
+|       while working on smb-enum-sessions.
+|_          
+|_smb-vuln-ms10-054: false
+
+TRACEROUTE (using port 139/tcp)
+HOP RTT       ADDRESS
+1   45.19 ms  10.17.0.1
+2   ... 4
+5   174.01 ms 10.10.124.142
+
+Read data files from: /usr/share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Apr 26 05:48:47 2025 -- 1 IP address (1 host up) scanned in 62.91 seconds
