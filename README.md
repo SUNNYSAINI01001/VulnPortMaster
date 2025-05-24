@@ -15,7 +15,7 @@ The tool supports multiple scanning techniques, all built-in Python 3.13, for co
 
 1. Clone the repository:
 ```
-git clone https://github.com/SUNNYSAINI01001/VulnPortMaster.git
+git clone https://github.com/d3athcod3/VulnPortMaster.git
 ```
 
 2. Navigate to the directory:
